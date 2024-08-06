@@ -1,0 +1,104 @@
+@media (max-width: 575.98px){
+    .container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px;
+    }
+    .section1 {
+        height: calc(100vh + 200px);
+        background: linear-gradient(to left, rgb(1, 1, 63), rgb(1, 1, 159));
+    }
+    .section1 .container img {
+        width: 0px;
+        padding: 30px 0;
+    }
+    .section2 {
+        text-align: center;
+        height: 1250px;
+    }
+    .section2 .container .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .section2 .container .cards .card {
+        width: 90%;
+        height: 250px;
+        margin: 10px auto 0;
+        padding: 20px;
+        background-color: rgb(247, 242, 242);
+        text-align: center;
+    }
+    .section3 {
+        height: calc(100vh + 50px);
+    }
+    .section3 h2 {
+        color: white;
+    }
+    .section3 .container img {
+        width: 350px;
+        padding: 30px 0;
+    }
+    .section5 {
+        padding-top: 20px;
+        height: 1430px;
+    }
+    .section5 h2 {
+        color: white;
+    }
+    .section5 .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .section5 .cards .card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .section6 .cards{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .section6 .cards .card {
+        height: 350px;
+        width: 80%;
+        margin: 50px auto 20px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 1px 1px 6px #01295d;
+        position: relative;
+    }
+    .footer{
+        height: 1500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .address {
+        text-align: center;
+    }
+    .footer .info {
+        width: 80%;
+        margin: 10px auto 0;
+        text-align: center;
+    }
+    .footer .links {
+        text-align: center;
+        margin: 10px auto 0;
+    }
+    .footer .subscribe {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .footer form {
+        width: 250px;
+        height: 30px;
+        margin: auto;
+        text-align: center;
+        border-bottom:1px solid white;
+        font-size: 20px;
+    }
+}

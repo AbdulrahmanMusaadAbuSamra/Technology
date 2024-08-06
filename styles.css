@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+:root {
+    --blue: rgb(0, 170, 255);
+    --white: white;
+}
+span {
+    color: var(--blue);
+}
+.container {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+.navbar {
+    background: linear-gradient(to left, rgb(1, 1, 63), rgb(1, 1, 159));
+}
+.logo {
+    color: var(--white);
+    font-size: 30px;
+    font-weight:700;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.nav-links li {
+    margin-left: 30px;
+}
+.nav-links .search {
+    margin-left: 25px;
+}
+.nav-links a {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 500;
+}
+a:hover{
+    color: rgb(0, 170, 255);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.nav-icon {
+    display: flex;
+    flex-direction: row;
+}
+.section1 {
+    height: calc(100vh + 200px);
+    background-image: url(../images/hero-bg.png);
+    background-size: cover; /* ضبط حجم الصورة لتغطية العنصر بأكمله */
+    background-position: center; /* وضع الصورة في الوسط */
+    background-repeat: no-repeat;
+    /* background: linear-gradient(to left, rgb(1, 1, 63), rgb(1, 1, 159)); */
+}
+.section1 .container {
+    color: white;
+    justify-content: space-between;
+}
+.section1 .container .larg {
+    width: 550px;
+    padding-left: 50px;
+    animation: slide 5s infinite linear;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px); /* المسافة لأعلى */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.section1 h1 {
+    line-height: 60px;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 3px 4px;
+}
+.section1 p {
+    text-align:justify;
+    line-height: 30px;
+}
+button {
+    background-color:  rgb(0, 170, 255);
+    padding: 20px 50px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: white;
+    color: rgb(0, 170, 255);
+}
+.section2 {
+    height: 100vh;
+    text-align: center;
+}
+.section2 h2 {
+    margin-top: 50px;
+}
+.section2 .container .cards{
+    display: flex;
+}
+.section2 .container .cards .card {
+    width: 25%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(247, 242, 242);
+    text-align: center;
+}
+.section2 .container .cards .card img {
+    width: 80px;
+}
+.section2 .container .cards .card h3 {
+    color:  rgb(0, 170, 255);
+}
+.section2 .container .cards .card a:hover {
+    color:  rgb(0, 170, 255);
+}
+.section2 .container .cards .card a {
+    color: #000;
+    font-weight: bold;
+}
+.section2 .button:hover{
+    background-color: var(--white);
+    color:  rgb(0, 170, 255);
+}
+.section2 .button a{
+    padding: 20px;
+}
+.section2 .button {
+    background-color:  rgb(0, 170, 255);
+    margin: 50px;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    border: 0;
+    border-radius: 10px;
+}
+.section3 {
+    background-color: #00204a;
+    height: calc(100vh + 50px);
+    text-align: center;
+    padding-top: 30px;
+}
+.section3 h2 , .section3 p{
+    color: var(--white);
+}
+span{
+    color:  rgb(0, 170, 255);
+}
+.section3 img{
+    width: 550px;
+    padding-right: 40px;
+    padding-top: 20px;
+    animation: slide 5s infinite linear;
+}
+.section3 .contant2 {
+    text-align: left;
+}
+.section3 .contant2 h3{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 33px;
+    text-align: left;
+}
+.section3 .container a {
+    color: #000;
+    font-weight: bold;
+}
+.section3 .button:hover{
+    background-color: var(--white);
+    color:  rgb(0, 170, 255);
+}
+.section3 .button {
+    background-color:  rgb(0, 170, 255);
+    margin: 20px 0;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+.section4 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.section4 p , .section2 p{
+    text-align: center;
+    line-height: 25px;
+    word-spacing: 3px;
+}
+.section4 .container .cards .card {
+    padding: 20px;
+    text-align: center;
+}
+.section4 .container .cards .card img {
+    width: 80px;
+    border: 4px solid black;
+    border-radius: 50%;
+    padding: 20px;
+}
+.section4 .container .cards .card h3 {
+    color:  rgb(0, 170, 255);
+}
+.section4 .container .cards .card a:hover {
+    color:  rgb(0, 170, 255);
+}
+.section4 .container .cards .card a {
+    color: #000;
+    font-weight: bold;
+}
+.section4 .button:hover{
+    background-color: white;
+    color:  rgb(0, 170, 255);
+}
+.section4 .button a{
+    padding: 20px;
+}
+.section4 .button {
+    background-color:  rgb(0, 170, 255);
+    margin: 50px;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    border: 0;
+    border-radius: 10px;
+}
+.section5 {
+    height: calc(100vh - 30px);
+    text-align: center;
+    background-color: #00204a;
+}
+
+.section5 h2 {
+    padding: 60px 0 30px 0;
+    margin-top: 0;
+    text-align: center;
+    color: var(--white);
+}
+.section5 span {
+    color:  rgb(0, 170, 255);
+}
+.section5 .cards{
+    display: flex;
+}
+.section5 .cards .card {
+    height: 270px;
+    width: 250px;
+    margin:  auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #01295d;
+    text-align: center;
+}
+.section5 .cards .card img {
+    width: 100px;
+    border: 4px solid var(--white);
+    border-radius: 50%;
+}
+.section5 .cards .card h3 {
+    color:  rgb(0, 170, 255);
+}
+.section5 .cards .card p {
+    color: var(--white);
+}
+.icons {
+    color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+.icons a {
+    font-size: 25px;
+    color: var(--white);
+}
+.icons a:hover {
+    color: rgb(0, 170, 255);
+}
+.section6 {
+    height: 500px;
+    text-align: center;
+}
+
+.section6 h2 {
+    padding: 40px 0 50px 0;
+    text-align: center;
+    color: black;
+}
+.section6 span {
+    color:  rgb(0, 170, 255);
+}
+.section6 .cards{
+    display: flex;
+    margin-bottom: 50px;
+}
+.section6 .cards .card {
+    height: 270px;
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 6px #01295d;
+    position: relative;
+}
+.section6 .cards .card .img {
+    position: absolute;
+    top: -50px;
+}
+.section6 .cards .card img {
+    width: 100px;
+    border-radius: 50%;
+}
+.section6 .cards .card h3 {
+    color:  rgb(0, 170, 255);
+    font-weight: 600;
+}
+.section6 .cards .card p {
+    color: rgb(121, 121, 121);
+    padding-top: 100px;
+    line-height: 25px;
+    word-spacing: 2px;
+    text-align: justify;
+}
+.footer{
+    height: 400px;
+    display: flex;
+    background-color: #01295d;
+    color: var(--white);
+}
+.footer .address {
+    margin: 30px 70px 20 0;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-left: 70px;
+}
+.footer .address a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: var(--white);
+}
+.footer .address div {
+    display: flex;
+}
+.footer .icons {
+    color: var(--white);
+    justify-content: space-between;
+}
+.footer .info {
+    width: 25%;
+    text-align: left;
+    margin: 50px 50px 0 0;
+}
+.footer .info p {
+    line-height: 30px;
+    word-spacing: 2px;
+}
+.footer ul {
+    display: flex;
+    flex-direction: column;
+}
+.footer li {
+    margin: 10px 0;
+}
+.footer .links {
+    text-align: left;
+    margin: 50px 80px 0 0;
+}
+.footer .subscribe {
+    margin-top: 50px;
+    text-align: left;
+    color: var(--white);
+}
+.footer form {
+    width: 250px;
+    height: 50px;
+    text-align: left;
+    border-bottom:1px solid var(--white);
+    font-size: 20px;
+}
+.footer input:hover {
+    background-color: var(--white);
+    color: var(--blue);
+}
+.footer input {
+    text-align: center;
+    background-color:  var(--blue);
+    border: 0;
+    color: var(--white);
+    font-size: 24px;
+    width: 250px;
+    height: 60px;
+    margin: 50px 0;
+}
